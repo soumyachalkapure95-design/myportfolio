@@ -1,0 +1,24 @@
+.bg-common
+{
+    background-color: #AB0C2F;
+}
+.navbar-nav li
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+.gap{
+    padding-top : 80px;
+    padding-bottom : 80px;
+}
+.text-justify
+{
+    text-align:justify;
+}
+.odd{
+    background-color :#c32b4c;
+}
+.border-white
+{
+    border: 1px;
+}
