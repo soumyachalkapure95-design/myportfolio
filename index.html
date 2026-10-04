@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soumya Chalkapure | AI/ML Portfolio</title>
+<style>
+:root{
+  --bg:#f8fafc;--text:#0f172a;--muted:#526071;--accent:#0f766e;--line:#d9e1ea;--chip:#e8eef5;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1a24;--text:#e6edf3;--muted:#9fb0bf;--accent:#5eead4;--line:#223545;--chip:#16293a}}
+:root[data-theme="dark"]{--bg:#0e1a24;--text:#e6edf3;--muted:#9fb0bf;--accent:#5eead4;--line:#223545;--chip:#16293a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:22px;padding-top:12px;padding-bottom:12px;overflow-x:auto;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--text)}
+nav a.brand{color:var(--text);font-weight:700;margin-right:auto}
+header{padding:72px 0 40px}
+h1{font:700 clamp(40px,8vw,68px)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.02em;margin:0 0 20px}
+.lead{font:400 clamp(21px,3.4vw,27px)/1.4 Georgia,"Times New Roman",serif;margin:0 0 20px;max-width:30ch}
+.sub{color:var(--muted);margin:0 0 28px;max-width:60ch}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:10px 18px;border:1.5px solid var(--accent);border-radius:6px;text-decoration:none;font-weight:600}
+.btn.solid{background:var(--accent);color:var(--bg)}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font:700 28px/1.2 Georgia,"Times New Roman",serif;margin:0 0 22px}
+.skills{display:grid;grid-template-columns:150px 1fr;gap:10px 20px;margin:0}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--muted)}
+.proj{margin-bottom:34px}
+.proj h3{font:700 22px/1.3 Georgia,"Times New Roman",serif;margin:0}
+.proj .kind{color:var(--muted);margin:2px 0 8px}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px;padding:0;list-style:none}
+.stack li{background:var(--chip);border-radius:4px;padding:2px 9px;font-size:14px}
+.proj ul.pts{margin:0;padding-left:20px}
+.proj ul.pts li{margin-bottom:6px}
+.edu p{margin:0 0 14px}
+.edu b{display:block}
+.muted{color:var(--muted)}
+footer{padding:30px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+@media (max-width:560px){.skills{grid-template-columns:1fr;gap:2px}.skills dd{margin-bottom:12px}header{padding-top:48px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="#top">Soumya C.</a>
+  <a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main id="top" class="wrap">
+<header>
+  <h1>Soumya Chalkapure</h1>
+  <p class="lead">I build machine learning systems that read, search and predict.</p>
+  <p class="sub">Final-year AI and Data Science student in Karnataka, India. I work with NLP, embeddings-based semantic similarity, and ML-powered Python APIs (FastAPI, Django). Looking for a Machine Learning internship.</p>
+  <div class="links">
+    <a class="btn solid" href="#projects">See my projects</a>
+    <a class="btn" href="https://github.com/soumyachalkapure95-design">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/soumya-s-chalkapure-4b0b5a392">LinkedIn</a>
+  </div>
+</header>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>Python, SQL</dd>
+    <dt>ML and NLP</dt><dd>Machine Learning, NLP, Embeddings, Semantic Similarity, Scikit-learn, spaCy, Sentence Transformers</dd>
+    <dt>Backend and APIs</dt><dd>FastAPI, Django, Django REST Framework, Flask, REST API design</dd>
+    <dt>Data and tools</dt><dd>NumPy, Pandas, SQLite, MySQL, MongoDB, Supabase, Docker, Git, GitHub, Power BI</dd>
+  </dl>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <article class="proj">
+    <h3>ATS Resume Scorer</h3>
+    <p class="kind">AI-powered resume analysis platform</p>
+    <ul class="stack"><li>Python</li><li>FastAPI</li><li>Streamlit</li><li>spaCy</li><li>Sentence Transformers</li><li>Groq API</li><li>Supabase</li></ul>
+    <ul class="pts">
+      <li>Scores a resume against a job description using skill extraction and semantic similarity from Sentence Transformers embeddings.</li>
+      <li>FastAPI backend and Streamlit interface that accept PDF, DOC and DOCX uploads.</li>
+      <li>Llama 3 (via Groq) writes personalized suggestions; Supabase stores accounts and analysis history; reports export to PDF.</li>
+    </ul>
+  </article>
+
+  <article class="proj">
+    <h3>Vitalis-AI</h3>
+    <p class="kind">Healthcare diagnostic web application</p>
+    <ul class="stack"><li>Python</li><li>Django</li><li>Scikit-learn</li><li>SQLite</li><li>Pandas</li><li>Bootstrap</li></ul>
+    <ul class="pts">
+      <li>Random Forest model predicts disease probabilities from symptoms entered by the patient.</li>
+      <li>Trained pipeline served through Joblib inside Django, with inference latency under 500 ms.</li>
+      <li>Relational schema for patient sessions and diagnostic history, plus modular REST endpoints.</li>
+    </ul>
+  </article>
+
+  <article class="proj">
+    <h3>SnapClass</h3>
+    <p class="kind">AI-powered attendance system</p>
+    <ul class="stack"><li>Python</li><li>Streamlit</li><li>scikit-learn</li><li>dlib</li><li>Librosa</li><li>Resemblyzer</li><li>Supabase</li><li>Docker</li></ul>
+    <ul class="pts">
+      <li>Marks attendance automatically with face recognition and voice identification.</li>
+      <li>Containerized with Docker and deployed on Streamlit Community Cloud.</li>
+      <li><a href="https://ai-attendance-6hl45rskst2zc8rhsgapptn.streamlit.app/">Open the live demo</a></li>
+    </ul>
+  </article>
+  <!-- Add the Endee vector-database project here once it is built -->
+</section>
+
+<section id="education" class="edu">
+  <h2>Education</h2>
+  <p><b>B.E., Artificial Intelligence and Data Science</b>SharanaBasava University, Kalaburagi. CGPA 8.6 / 10. Expected graduation 2027.</p>
+  <p><b>Pre-University (PCMB)</b><span class="muted">Shree C.B. Gurukul PU College, Bidar. 83%, 2023.</span></p>
+  <p><b>Achievement</b>1st prize in the project expo at IEEE Innovation Fest.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email me at <a href="mailto:soumyachalkapure95@gmail.com">soumyachalkapure95@gmail.com</a>, or find me on <a href="https://linkedin.com/in/soumya-s-chalkapure-4b0b5a392">LinkedIn</a> and <a href="https://github.com/soumyachalkapure95-design">GitHub</a>.</p>
+</section>
+</main>
+
+<footer><div class="wrap">Soumya Chalkapure</div></footer>
+</body>
+</html>
